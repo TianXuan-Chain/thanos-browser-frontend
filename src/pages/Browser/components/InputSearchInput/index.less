@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+}
+.globalSearchInput {
+  width: 276px;
+  height: 52px;
+  font-size: 14px;
+  border-radius: 30px;
+  border: none;
+  background-color: #f5f7f9;
+  padding: 14px;
+  transition: all 0.5s;
+  :global(.ant-input){
+    background: transparent;
+  }
+  :global(.ant-input-suffix){
+    margin-left: 0;
+  }
+  &.expand{
+    width: 276px;
+  }
+  &.fold{
+    width: 52px;
+  }
+}

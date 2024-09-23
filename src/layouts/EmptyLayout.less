@@ -1,0 +1,133 @@
+@import '~antd/es/style/themes/default.less';
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #f5f7f9
+}
+
+.content {
+  flex: 1;
+  padding: 32px 0;
+}
+.header {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 4px 10px rgba(102, 102, 102, 0.1);
+  z-index: 100;
+  .headerContent {
+    width: 1200px;
+    margin: 0 auto;
+    height: 64px;
+    display: flex;
+    align-items: center;
+  }
+}
+.mainWrap {
+  width: 100%;
+  position: relative;
+  background-image: url(../assets/bg-left.png),url(../assets/bg-right.png);
+  background-repeat: no-repeat;
+  background-position: 32px 238px,right bottom;
+  // background-attachment: fixed;
+}
+.mainContent {
+  position: relative;
+
+  min-height: calc(~"100vh - 160px");
+}
+.slogan {
+  width: 312px;
+  height: 36px;
+  background: url(../assets/slogan3.png) no-repeat;
+  background-size: 100% 100%;
+  margin-right: 102px;
+}
+.headerSlogan {
+  color: #262626;
+  line-height: 24px;
+  text-align: center;
+  h2 {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  margin-right: 60px;
+}
+.tabList {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  .tab {
+    margin-right: 70px;
+    line-height: 64px;
+    white-space: nowrap;
+    z-index: 100;
+    font-size: 16px;
+    color: #8C8C8C;
+    cursor: pointer;
+    &.active {
+      // border-bottom: 2px solid #262626;
+      color: #262626;
+    }
+  }
+}
+.footer {
+  width: 100%;
+  background: #fff;
+  margin-top: 40px;
+  .footerContent {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+
+    color: #646464;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .footerText {
+      a {
+        color: #646464;
+      }
+    }
+  }
+
+  // .brandLogo {
+  //   width: 161px;
+  //   height: 40px;
+  //   background: url(../assets/slogan.png) no-repeat;
+  //   background-size: 100% 100%;
+  //   cursor: pointer;
+  // }
+}
+@media (max-width: 1280px) {
+.header {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 4px 10px rgba(102, 102, 102, 0.1);
+  z-index: 100;
+  .headerContent {
+    width: 1200px;
+    margin: 0 auto;
+    height: 64px;
+    display: flex;
+    align-items: center;
+  }
+}
+  .mainContent {
+
+    min-height: calc(~"100vh - 160px");
+  }
+
+}

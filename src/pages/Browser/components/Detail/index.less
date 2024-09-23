@@ -1,0 +1,115 @@
+.item {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  & > div {
+    &:first-child {
+      min-width: 120px;
+    }
+    &:nth-child(2) {
+      position: relative;
+      flex: 1;
+      width: 100%;
+    }
+  }
+}
+
+.hash {
+  display: inline-block;
+  width: 200px;
+  overflow: hidden;
+  color: #004f8a;
+  font-size: 12px;
+  line-height: 18px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+  cursor: pointer;
+}
+.mainWrapper {
+  width: 1200px;
+  margin: 20px auto;
+}
+.highlight {
+  color: #214790;
+}
+.detail {
+  width: 84%;
+  word-wrap: break-word;
+  word-break: normal;
+}
+// 关联交易记录板块样式
+.association {
+  :global {
+    .ant-card-head {
+      border-bottom: 1px solid #dfdfdf;
+      padding: 0 24px 0 40px;
+    }
+    .ant-card-body {
+      padding: 0;
+    }
+  }
+}
+:global(.ant-table) {
+  color: #8c8c8c !important;
+}
+:global(.ant-table-thead > tr > th) {
+  color: #343434;
+  font-size: 16px;
+}
+:global(.ant-descriptions-item-content) {
+  color: #646464 !important;
+}
+:global(.ant-descriptions-item-label) {
+  color: #646464 !important;
+}
+// :global(.ant-card-head) {
+//   border-bottom: 1px solid #dfdfdf;
+//   position: relative;
+//   &::before {
+//     position: absolute;
+//     top: 23px;
+//     left: 12px;
+//     z-index: 100;
+//     display: block;
+//     width: 4px;
+//     height: 12px;
+//     background: #3f90ff;
+//     border-radius: 4px;
+//     content: '';
+//   }
+// }
+:global {
+  .ant-card-head {
+    border-bottom: 1px solid #dfdfdf;
+    padding: 0 24px 0 40px;
+  }
+  .ant-card {
+    border-radius: 20px !important;
+    box-shadow: 0 4px 12px rgba(210, 210, 210, 0.1)!important;
+  }
+  .ant-card-head-title {
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Noto Sans';
+    color: #343434;
+    padding: 0;
+    height: 67px;
+    line-height: 67px;
+  }
+  .ant-card-body {
+    padding: 40px 45px 40px 44px;
+  }
+  .ant-descriptions-row > td {
+    padding-bottom: 0;
+  }
+  .ant-descriptions-item-container .ant-descriptions-item-label,
+  .ant-descriptions-item-container .ant-descriptions-item-content {
+    height: 25px;
+    line-height: 25px;
+  }
+  .ant-descriptions-item-container .ant-descriptions-item-label {
+    width: 120px;
+  }
+}
