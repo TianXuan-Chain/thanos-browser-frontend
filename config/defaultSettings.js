@@ -7,7 +7,7 @@ const proSettings = {
   fixedHeader: false,
   fixSiderbar: true,
   colorWeak: false,
-  title: '天玄区块链',
+  title: '天玄链',
   pwa: false,
   iconfontUrl: '',
 };

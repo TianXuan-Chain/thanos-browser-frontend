@@ -167,7 +167,7 @@ const IndexPage = ({
       {/* {notice[0]} */}
       <Row gutter={[24, 24]}>
         <Col xs={24} sm={24} md={12}>
-          <Card title="天玄区块链信息概览" loading={loading1} style={{ height: 268 }}>
+          <Card title="天玄链信息概览" loading={loading1} style={{ height: 268 }}>
             <Row xs={24} sm={24} md={12}  gutter={0} align="middle">
               <Col span={12} style={{ marginBottom: 0,display:'flex',justifyContent:'flex-start' }}>
                 <Statistic title="当前块高" value={lastBlockNum} />
