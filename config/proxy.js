@@ -15,8 +15,8 @@ export default {
     //   },
     // }
     '/browser/': {
-      target: 'https://nft-browser-test-10087-8080.apps-qa.danlu.netease.com',
-      // target:'http://10.221.45.112:7776',
+      // target: 'https://nft-browser-test-10087-8080.apps-qa.danlu.netease.com',
+      target:'http://49.234.35.199:7776',
       changeOrigin: true,
       // pathRewrite: {
       //   '^': '',

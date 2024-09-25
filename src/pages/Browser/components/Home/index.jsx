@@ -196,7 +196,7 @@ const IndexPage = ({
               pixelRatio
               height={160}
               scale={txnScale}
-              padding={[10, 10, 45, 32]} //上 右 下 左
+              padding={[10, 10, 45, 52]} //上 右 下 左
               data={txnCountList}
             >
               <Tooltip />
