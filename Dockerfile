@@ -1,7 +1,7 @@
 FROM node:12-alpine AS builder
 WORKDIR '/app'
 COPY . .
-RUN npm install --registry=https://registry.npm.taobao.org
+RUN npm install --registry=https://registry.npmmirror.com
 RUN npm run build
 
 #运行阶段
